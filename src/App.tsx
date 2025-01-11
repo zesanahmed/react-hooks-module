@@ -1,7 +1,8 @@
 import { useState } from "react";
 import UsestateExample from "./pages/UsestateExample";
-import UseStateForm from "./pages/UseStateForm";
-import UseReducerExample from "./pages/UseReducerExample";
+// import UseStateForm from "./pages/UseStateForm";
+// import UseReducerExample from "./pages/UseReducerExample";
+import UseReducerWithTsPayload from "./pages/UseReducerWithTsPayload";
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -9,8 +10,9 @@ function App() {
     <>
       <div>
         <UsestateExample counter={counter} setCounter={setCounter} />
-        <UseStateForm />
-        <UseReducerExample />
+        {/* <UseStateForm /> */}
+        {/* <UseReducerExample /> */}
+        <UseReducerWithTsPayload />
       </div>
     </>
   );
